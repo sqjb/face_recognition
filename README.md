@@ -1,3 +1,5 @@
+## a smiple face recognition app
+![Alt text](image.png)
 ## EVENT
 ```json
 {

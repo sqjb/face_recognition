@@ -1,0 +1,6 @@
+dlib==19.24.2
+Flask==3.0.0
+Flask_Cors==4.0.0
+numpy==1.26.2
+opencv_python==4.8.1.78
+tqdm==4.66.1

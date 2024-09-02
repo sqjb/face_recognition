@@ -10,7 +10,7 @@ import dlib
 import numpy as np
 import flask
 from flask import Flask, render_template, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from db import RepresentationDB
 from dataclasses import dataclass
 import queue
@@ -21,7 +21,7 @@ face_rec = dlib.face_recognition_model_v1("./models/dlib_face_recognition_resnet
 
 database = RepresentationDB("./reps.pkl")
 app = Flask("face recognition", static_folder='images')
-CORS(app)
+CORS(app, origins="*")  #配置全局路由
 
 
 @app.route("/image", methods=['POST'])
@@ -232,4 +232,4 @@ def camera():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8100)

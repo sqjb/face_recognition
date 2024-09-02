@@ -21,6 +21,6 @@ export default defineConfig({
   ],
   npmClient: 'yarn',
   define: {
-    'process.env.API_ADDR': 'http://localhost:5000'
+    'process.env.API_ADDR': 'http://localhost:8100'
   }
 });

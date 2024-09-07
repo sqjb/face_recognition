@@ -6,6 +6,10 @@
 3. web listen on **:8000** port
 ### 2.backend
 1. pip install -r requirements.txt
+    ```bash
+    # aliyun for cn
+    pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+    ```
 2. python app.py
 3. flask backend listen on **:5000** port
 ### 3.create face db
